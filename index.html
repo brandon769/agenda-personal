@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Personal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Agenda Personal</h1>
+    <div class="top-controls">
+      <input type="text" id="searchInput" placeholder="Buscar tarea..." />
+      <button id="toggleTheme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Título" required />
+      <textarea id="description" placeholder="Descripción" required></textarea>
+      <input type="date" id="dueDate" required />
+      <button type="submit">Agregar Tarea</button>
+    </form>
+
+    <section id="tasksContainer"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
